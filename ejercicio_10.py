@@ -17,7 +17,7 @@ while True:
         os.system("clear")
         print("\t====== agregando =====")
         
-        nombre = input("Ingrese el nombre del contacto: ").lower
+        nombre = input("Ingrese el nombre del contacto: ").lower()
         numero = input("Ingrese el numero del contacto: ")
         contactos[nombre] = {}
         contactos[nombre]["telefono"] = numero
@@ -28,7 +28,7 @@ while True:
         os.system("clear")
         print("\t====== buscar =====")
         
-        nombre = input("que contacto buscas: ").lower
+        nombre = input("que contacto buscas: ").lower()
         if nombre in contactos:
             os.system("clear")
             print(f"{nombre} = {contactos[nombre]["telefono"]}")
@@ -42,7 +42,7 @@ while True:
         os.system("clear")
         print("\t====== eliminar =====")  
         
-        nombre = input("contacto que desees eliminar: ").lower
+        nombre = input("contacto que desees eliminar: ").lower()
         if nombre in contactos:
             os.system("clear")
             del contactos[nombre]
